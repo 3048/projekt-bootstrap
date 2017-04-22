@@ -1,0 +1,82 @@
+/*.......................general styles START.............................*/
+
+* {
+	box-sizing: border-box;
+}
+
+.btn-primary {
+	background-color: lightblue;
+	border-color: lightblue;
+}
+
+.btn-primary:hover {
+	background-color: #0ed8d6;
+	border-color: #0ed8d6;
+}
+
+h3 {
+	color: #333333;
+	text-align: center;
+}
+
+section {
+	padding: 60px 40px;
+}
+
+p {
+	font-weight: 300;
+	line-height: 1.5em;
+	text-align: center;
+}
+
+
+/*.......................general styles STOP.............................*/
+
+
+/* ..........................header START................................*/
+
+.page-header {
+	background-image: url(../img/header/pictures_on_the_wall.jpg);
+	background-position: center;
+	background-size: cover;
+	height: 100vh;
+	position: relative;
+}
+
+.page-header #header-caption {
+	position: absolute;
+	top: 50%;
+	text-align: center;
+	left: 0;
+	right: 0;
+	transform: translateY(-50%);
+	color: white;
+	font-family: 'Roboto', sans-serif;
+}
+
+
+/* ..........................header STOPT................................*/
+
+
+/* ..........................services START................................*/
+
+#services .services-icons {
+	display: inline-block;
+	text-align: center;
+	margin-top: 20px;
+}
+
+
+/* ..........................services STOPT................................*/
+
+
+/* ..........................portfolio START................................*/
+
+
+/* ..........................portfolio STOPT................................*/
+
+
+/* ..........................contact START................................*/
+
+
+/* ..........................contact STOPT................................*/

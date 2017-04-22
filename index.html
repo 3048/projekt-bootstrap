@@ -1,20 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-		<title>Bootstrap 101 Template</title>
 
-		<!-- Bootstrap -->
-		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-		<link rel="stylesheet" href="css/style.css">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
+	<title>Bootstrap Projekt</title>
+	<!-- FONT-AWESOME-->
+	<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+
+	<!-- Bootstrap -->
+	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- FONTS-->
+	<link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,400i|Montserrat:300i,400,700|Roboto+Slab:300,400" rel="stylesheet">
+</head>
+
+<body>
+	<nav id="menu" class="navbar navbar-default navbar-fixed-top ">
+		<div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<p href="">Bootstrap Projekt</p>
+
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="main-menu">
+				<ul class="nav navbar-nav navbar-right">
+
+					<li class="menu-item"><a href="#">SERVICES</a></li>
+					<li class="menu-item"><a href="#">PORTFOLIO</a></li>
+					<li class="menu-item"><a href="#">TEAM</a></li>
+
+					<li class="menu-item"><a href="#">CONTACT</a></li>
+
+				</ul>
+
+
+			</div>
+			<!-- /.navbar-collapse -->
+		</div>
+		<!-- /.container-fluid -->
+	</nav>
+
+
+	<!--.............................naglowek.......................................... - start-->
+
+	<header class="page-header">
+		<div id="header-caption">
+			<p>Nam libero tempore, cum soluta</p>
+
+			<h1>Lorem Ipsum Dolor</h1>
+			<button class="btn btn-lg btn-primary">View More</button>
+		</div>
+	</header>
+
+	<!-- .................................naglowek .....................................- stop -->
+
+	<!-- ..............................sekcja services ................................- start -->
+
+	<section id="services">
+		<div class="container">
+			<div class="row row-sm-12">
+				<h3>SERVICES</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+			</div>
+
+
+			<div class="row">
+				<div class="services-icons col-md-4">
+					<a href="#"><i class="fa fa-cloud-download fa-3x" aria-hidden="true"></i></a>
+					<h4>Web development</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia expedita doloribus numquam ab obcaecati atque pariatur deleniti dolore esse possimus debitis quos!</p>
+				</div>
+				<div class="services-icons col-md-4 ">
+					<a href="#"><i class="fa fa-comment fa-3x" aria-hidden="true"></i></a>
+					<h4>E-commerce</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia expedita doloribus numquam ab obcaecati atque pariatur deleniti dolore esse possimus debitis quos!</p>
+
+				</div>
+
+				<div class="services-icons col-md-4">
+					<a href="#"><i class="fa fa-briefcase fa-3x" aria-hidden="true"></i></a>
+					<h4>Web design</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia expedita doloribus numquam ab obcaecati atque pariatur deleniti dolore esse possimus debitis quos!</p>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!--............................... sekcja services ...............................- stop -->
+
+	<!-- ..............................sekcja portfolio ................................- start -->
+
+
+
+
+	<section id="portfolio">
+		<h3>PORTFOLIO</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+		<div class="portfolio-items">
+			<div class="portfolio-item" id="portfolio-item-1"></div>
+			<div class="portfolio-item" id="portfolio-item-2"></div>
+			<div class="portfolio-item" id="portfolio-item-3"></div>
+			<div class="portfolio-item" id="portfolio-item-4"></div>
+			<div class="portfolio-item" id="portfolio-item-5"></div>
+			<div class="portfolio-item" id="portfolio-item-6"></div>
+		</div>
+	</section>
+
+	<!--............................... sekcja portfolio ...............................- stop -->
+
+	<!--.............................outTeam.......................................... - start-->
+
+	<section>
+		<h3>MEET OUR TEAM</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+
+		<div></div>
+		<div></div>
+		<div></div>
+	</section>
+
+	<!-- .................................ourTeam .....................................- stop -->
+
+	<!--.............................contact.......................................... - start-->
+
+	<section>
+		<h3>CONTACT US</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+
+		<form>
+			<div class="form-group">
+
+				<input type="name" class="form-control" id="exampleInputName" placeholder="Your name*">
+			</div>
+			<div class="form-group">
+
+				<input type="email" class="form-control" id="exampleInputEmail" placeholder="Your email*">
+			</div>
+
+			<div class="form-group">
+
+				<input type="phone" class="form-control" id="exampleInputPhone" placeholder="Your phone*">
+			</div>
+
+			<textarea placeholder="Wiadomość"></textarea>
+			<button type="submit" class="btn btn-primary">Send message</button>
+		</form>
+	</section>
+
+	<!-- .................................contact .....................................- stop -->
+
+	<!--.............................footer.......................................... - start-->
+
+	<footer>
 	
-	</head>
-	<body>
-		<h1>Hello, world!</h1>
+
+	</footer>
+
+	<!-- .................................footer.....................................- stop -->
 
 
 
@@ -25,18 +180,14 @@
 
 
 
+	<!-- implementacja JQUERY -->
+	<script src="js/jquery-3.2.0.min.js"></script>
 
+	<!-- Implementacja Bootstrap -->
+	<script src="bootstrap/js/bootstrap.min.js"></script>
 
+	<!-- Moje style -->
+	<script src="js/script.js"></script>
+</body>
 
-
-
-		<!-- implementacja JQUERY -->
-		<script src="js/jquery-3.2.0.min.js"></script>
-
-		<!-- Implementacja Bootstrap -->
-		<script src="bootstrap/js/bootstrap.min.js"></script>
-
-		<!-- Moje style -->
-		<script src="js/script.js"></script>
-	</body>
 </html>

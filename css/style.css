@@ -66,14 +66,127 @@ p {
 	margin-top: 20px;
 }
 
+.globalBtn {
+	display: inline-block;
+	position: relative;
+	width: 70px;
+	height: 70px;
+	text-align: center;
+
+	background: #0ed8d6;
+	color: #fff;
+	font-size: 25px;
+	border-radius: 50%;
+}
+
+.globalBtn:hover {
+	display: inline-block;
+	position: relative;
+	width: 70px;
+	height: 70px;
+	border: 2px solid #0ed8d6;
+	
+	background: #fff;
+	color: #0ed8d6;
+	font-size: 25px;
+	border-radius: 50%;
+	transform: rotate(360deg);
+    transition: all 500ms;
+	
+}
+
+.globalBtn i {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 0;
+	left:0;
+}
+
+
+
 
 /* ..........................services STOPT................................*/
 
 
 /* ..........................portfolio START................................*/
 
+.portfolio-item {
+	height: 300px;
+	text-align: center;
+	padding: 10px;
+}
+
+.portfolio-items #portfolio-image-1 {
+	background-image: url(../img/portfolio/chestnut_on_bracket.jpg);
+	position: relative;
+	height: 66%;
+}
+
+.portfolio-items #portfolio-image-2 {
+	background-image: url(../img/portfolio/typing_on_laptop.jpg);
+	position: relative;
+	height: 66%
+}
+
+.portfolio-items #portfolio-image-3 {
+	background-image: url(../img/portfolio/child_with_blue_paint.jpg);
+	position: relative;
+	height: 66%
+}
+
+.portfolio-items #portfolio-image-4 {
+	background-image: url(../img/portfolio/chaotic_paint.jpg);
+	position: relative;
+	height: 66%
+}
+
+.portfolio-items #portfolio-image-5 {
+	background-image: url(../img/portfolio/house_with_blue_doors.jpg);
+	position: relative;
+	height: 66%
+}
+
+.portfolio-items #portfolio-image-6 {
+	background-image: url(../img/portfolio/box_of_cookies.jpg);
+	position: relative;
+	height: 66%
+}
+
 
 /* ..........................portfolio STOPT................................*/
+
+
+/* ..........................team START................................*/
+
+#team-image-1 {
+	background-image: url(../img/team/man-1.jpg);
+	text-align: center;
+	position: relative;
+	height: 65%;
+}
+
+#team-image-2 {
+	background-image: url(../img/team/man-2.jpg);
+	text-align: center;
+	position: relative;
+	height: 65%;
+}
+
+#team-image-3 {
+	background-image: url(../img/team/woman-1.jpg);
+	text-align: center;
+	position: relative;
+	height: 65%;
+}
+
+.team-member {
+	width: 100px;
+	height: 100px;
+}
+
+
+/* ..........................team STOPT................................*/
 
 
 /* ..........................contact START................................*/

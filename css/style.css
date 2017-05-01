@@ -5,7 +5,8 @@
 }
 
 body {
-	font-family: 'RobotoSlab'
+	font-family: 'RobotoSlab';
+	color: #777777;
 }
 
 .btn-primary {
@@ -18,12 +19,12 @@ body {
 	border-color: #0ed8d6;
 }
 
-h3 {
+h3,
+h4 {
+	font-family: "Montserrat";
 	color: #333333;
 	text-align: center;
-}
-h4 {
-	font-style: bold; 
+	font-weight: bold;
 }
 
 section {
@@ -32,8 +33,8 @@ section {
 }
 
 p {
+	font-size: 14px;
 	font-weight: 300;
-	font-family: 'DroidSerif';
 	font-style: italic;
 	line-height: 1.5em;
 	text-align: center;
@@ -50,6 +51,10 @@ h1 {
 	font-family: "Montserrat";
 	text-transform: uppercase;
 	font-weight: 600;
+}
+
+.row {
+	margin-top: 50px;
 }
 
 
@@ -104,12 +109,10 @@ h1 {
 /* ..........................header START................................*/
 
 .page-header {
-	background-image: url(../img/header/pictures_on_the_wall.jpg), linear-gradient(#695f5f, #332d2d);
-	background-position: center;
-	background-size: cover;
 	height: 100vh;
-	position: relative;
 	margin: 0;
+	border: 1px solid grey;
+	background-image: linear-gradient(to bottom, rgba(75, 67, 67, 0.5) 0%, rgba(75, 67, 67, 0.5) 100%), url(../img/header/pictures_on_the_wall.jpg);
 }
 
 .page-header #header-caption {
@@ -121,6 +124,10 @@ h1 {
 	transform: translateY(-50%);
 	color: white;
 	font-family: 'Roboto', sans-serif;
+}
+
+.page-header #header-caption > p {
+	font-size: 24px;
 }
 
 
@@ -167,7 +174,7 @@ h1 {
 /* ..........................portfolio START................................*/
 
 #portfolio {
-	background-color: #fff5e3;
+	background-color: #f7f7f7;
 }
 
 .portfolio-items {
@@ -177,53 +184,79 @@ h1 {
 .portfolio-item {
 	height: 360px;
 	text-align: center;
-	padding: 30px;
+	padding: 20px;
+
 }
 
-.container-image:hover {
-	transform: scale(1);
+.portfolio-i {
+	background-color: white;
+}
+
+.portfolio-item .portfolio-mask {
+	background-color: #0ed8d6;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	position: absolute;
+	transition: all .3s;
+}
+
+.portfolio-mask:hover {
+	opacity: 0.5;
+}
+
+.portfolio-content {
+	height: 100%;
+	width: 100%;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	margin: auto;
+}
+
+.portfolio-content .portfolio-content-inner {
+	position: absolute;
+	transform: translateY(-50%);
+	top: 50%;
+	padding: 5px;
+	width: 100%;
+}
+
+.portfolio-images {
+	background-size: cover;
+	position: relative;
+	height: 300px;
+	width: 100%;
 }
 
 .portfolio-items #portfolio-image-1 {
 	background-image: url(../img/portfolio/chestnut_on_bracket.jpg);
-	background-size: cover;
-	position: relative;
-	height: 300px;
+	
 }
 
 .portfolio-items #portfolio-image-2 {
 	background-image: url(../img/portfolio/typing_on_laptop.jpg);
-	background-size: cover;
-	position: relative;
-	height: 300px;
+	
 }
 
 .portfolio-items #portfolio-image-3 {
 	background-image: url(../img/portfolio/child_with_blue_paint.jpg);
-	background-size: cover;
-	position: relative;
-	height: 300px;
+	
 }
 
 .portfolio-items #portfolio-image-4 {
 	background-image: url(../img/portfolio/chaotic_paint.jpg);
-	background-size: cover;
-	position: relative;
-	height: 300px;
+	
 }
 
 .portfolio-items #portfolio-image-5 {
 	background-image: url(../img/portfolio/house_with_blue_doors.jpg);
-	background-size: cover;
-	position: relative;
-	height: 300px;
+	
 }
 
 .portfolio-items #portfolio-image-6 {
 	background-image: url(../img/portfolio/box_of_cookies.jpg);
-	background-size: cover;
-	position: relative;
-	height: 300px;
+	
 }
 
 
@@ -231,6 +264,10 @@ h1 {
 
 
 /* ..........................team START................................*/
+
+#ourTeam > div.row > div {
+	margin-top: 40px;
+}
 
 .team-image {
 	text-align: center;
@@ -241,17 +278,13 @@ h1 {
 	background-size: cover;
 }
 
-.team-member {
-	height: 500px;
-}
-
 .teamBtn {
 	display: inline-block;
 	position: relative;
 	width: 40px;
 	height: 40px;
 	text-align: center;
-	background: #333;
+	background: #222222;
 	color: #fff;
 	font-size: 25px;
 	border-radius: 50%;
@@ -278,7 +311,7 @@ h1 {
 /* ..........................contact START................................*/
 
 #contact {
-	background-image: url(../img/footer/world-map.jpg), linear-gradient(rgba(95, 95, 95, 0.5), rgba(95, 95, 95, 0.5));
+	background-image: linear-gradient(to bottom, rgba(21, 21, 21, 0.5) 100%, rgba(21, 21, 21, 0.5) 100%), url(../img/footer/world-map.jpg);
 	background-size: cover;
 }
 
@@ -306,7 +339,13 @@ h1 {
 	padding: 10px;
 }
 
-
+.footerText {
+	font-family: "Montserrat";
+	color: #333333;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 12px;
+}
 
 
 /* ..........................footer STOPT................................*/

@@ -222,6 +222,10 @@ h1 {
 	width: 100%;
 }
 
+.portfolio-content-inner > i {
+	color: white;
+	opacity: 1.0;
+}
 .portfolio-images {
 	background-size: cover;
 	position: relative;
